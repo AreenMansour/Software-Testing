@@ -1,0 +1,32 @@
+API name,Type of issue,Description of the issue,Your ID
+tolower,Inconsistent,"The return type is specified as an integer, but the function actually returns a string",212900211
+find,Incomplete,"There is no clarification on whether the search is case-sensitive, if overlapping results are included, or what the output is when no match exists",212900211
+substring,Incomplete,It is unclear what occurs when the end value exceeds the string's length or lies outside its valid range,212900211
+anagrams,Incomplete,The specification does not clarify which dictionary or wordlist is used to determine valid anagrams,212900211
+substring,Not correct,"The explanations for start and end are swapped: start is defined as end, and end is defined as start",212900211
+time,Ambiguous,"The description is overly brief. It doesn't specify the precise time format, the time zone, or the meaning of ""debug purposes",212900211
+reset_server,Ambiguous,It is uncertain whether resetting the server impacts all users or only the active session,212900211
+substring,Incomplete,?It is not clarified what occurs if start is greater than end – does it result in an error or return an empty string,212900211
+storage,Not correct,"The return type is indicated as str, but it may vary based on the command type – this is not explained",212900211
+find,Infeasible,Allowing the substring to be longer than the main string is illogical,212900211
+mix_case,Incomplete,It is unclear if the first letter is always lowercase or if it depends on the original text – the current examples consistently begin with a lowercase letter,212900211
+counter_string,Incomplete,It is not clarified what the generated string actually looks like – there is no defined format or expected output.,212900211
+length,Not correct,"The return type is specified as str, but the actual return is an integer (length)",212900211
+random,Incomplete,"It is not clarified what characters the random string may include (e.g., only ASCII? digits? symbols?), and no details are provided on whether the string is truly random, pseudo-random, or seed-based",212900211
+general,"Incomplete
+","There are missing details about input constraints (e.g., maximum string length, allowed characters), and it does not explain how special characters, spaces, or non-Latin text are managed",212900211
+anagrams,Inconsistent,"The documentation mentions ""No parameters,"" yet {text} is clearly required as a path parameter",212900211
+history,Inconsistent,"The return type is defined as str, but the actual output is a list containing strings (list[str])",212900211
+find,Not concise,The API name and description are too vague – it’s unclear whether it returns all occurrences or just a single one,212900211
+storage,Ambiguous,It is not clear if the API supports stateful operations or how it works with previously stored data,212900211
+history,"Incomplete
+",It does not clarify what occurs if there is no history,212900211
+reverse,Inconsistent,"The described functionality doesn't align with the name or expected output – it should reverse the text, not perform calculations",212900211
+history,Not necessary,"The description repeats the name (""The history of text tweaks..."") without providing any additional information",212900211
+general,Not concise,"The description is too brief and doesn’t clarify behavior rules, such as whether only English letters are processed or what happens if the input is already mixed",212900211
+password,Incomplete,"It is not stated how different character types (e.g., symbols, digits) impact the score",212900211
+reset_server,Incomplete,"It is not clarified whether the reset is permanent or temporary, nor how long it takes",212900211
+general,Incomplete,Error messages are not clearly explained for each potential failure.,212900211
+anagrams,Not correct,"There is no explanation of the behavior when the input produces no results, such as with 'zzz'.",212900211
+password,Ambiguous,"The phrase ""Is your password strong enough?"" is unclear – it doesn’t specify what qualifies as ""strong enough",212900211
+storage,Incomplete,"The purpose of the index query parameter is not clarified—its usage, range, and meaning are unclear. Additionally, the behavior when invalid or malformed commands are provided is not documented",212900211

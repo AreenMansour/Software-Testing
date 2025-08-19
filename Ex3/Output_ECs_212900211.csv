@@ -1,0 +1,14 @@
+EC description,Test case,Your ID
+Error response due to length < 1,(empty),212900211
+Error response due to length > 20,Asdfghjkloiuytrewqasder14325tg,212900211
+Score = 0 (very weak password),password,212900211
+Score = 1 (weak password),a1B,212900211
+Score = 2 (weak password),ab1C,212900211
+Score = 3 (medium password),abcD1,212900211
+Score = 4 (medium password),abcD1x,212900211
+Score = 5 (medium password),abcdefG1,212900211
+Score = 6 (strong password),abcdefgH1,212900211
+Score = 7 (strong password),abcdefghI1,212900211
+Score = 8 (strong password),abcdefghiJ1,212900211
+Score = 9 (very strong password),abcdefghijK1,212900211
+Score = 10 (very strong password),abcdefghijklM1,212900211

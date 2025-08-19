@@ -1,0 +1,25 @@
+EC description,Test case,Your ID
+len=0,,212900211
+0<len<=2,1,212900211
+root,root,212900211
+password,password,212900211
+admin,admin,212900211
+2<=len<=12 LUD,G00dShort,212900211
+2<=len<=12 same char,gggggggg,212900211
+2<=len<=12 LD,gfs98ased,212900211
+2<=len<=12 UD,NOT1LOWCASE,212900211
+2<=len<=12 LU,noDIGIT,212900211
+2<=len<=12 L,lowcaseonly,212900211
+2<=len<=12 U,UPCASEONLY,212900211
+2<=len<=12 D,1234567,212900211
+2<=len<=12 Special chars,%@#$^&*,212900211
+12<len<=20 LUD,L0ng-And-G00d,212900211
+12<len<=20 same char,aaaaaaaaaaaaaaaaaa,212900211
+12<len<=20 LD,l0ngbutnouppercase,212900211
+12<len<=20 UD,LONG1BUTNOLOWCASE,212900211
+12<len<=20 LU,LongButNotOneDigit,212900211
+12<len<=20 L,longbutonlylowecase,212900211
+12<len<=20 U,LONGBUTONLYUPCASE,212900211
+12<len<=20 D,1.2345E+13,212900211
+12<len<=20 Special chars,%@#$%$%$%$%$%$%$,212900211
+len>20,Too-L0ng-4-the-allowed-input-length,212900211

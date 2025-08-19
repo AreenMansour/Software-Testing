@@ -1,0 +1,27 @@
+Parameter,Partition,EC,String,Start,End,order,Validity,ID
+String,P1,0 < len(string) <= 20 (lower Boundary),a,1,1,1,valid,212900211
+String,P1,0 < len(string) <= 20 (lower Boundary),,1,2,2,invalid,212900211
+,,,,,,,,
+String,P1,0 < len(string) <= 20 (upper Boundary),1234567890123456789a,4,6,3,valid,212900211
+String,P1,0 < len(string) <= 20 (upper Boundary),12345678901234567890a,13,16,4,invalid,212900211
+,,,,,,,,
+Start,P2,1 <= Start <= 20 (lower boundary),abcdef,1,4,5,valid,212900211
+Start,P2,1 <= Start <= 20 (lower boundary),abcdef,0,4,6,invalid,212900211
+,,,,,,,,
+Start,P2,1 <= Start <= 20  (upper boundary),2*4*6*8*11*14*17*20*,20,20,7,valid,212900211
+Start,P2,1 <= Start <= 20 (upper boundary),2*4*6*8*11*14*17*20*,21,21,8,invalid,212900211
+,,,,,,,,
+End,P3,1 <= End <= 20 (lower boundary),abdcefg,1,1,9,valid,212900211
+End,P3,1 <= End <= 20 (lower boundary),abdcefg,0,0,10,invalid,212900211
+,,,,,,,,
+End,P3,1 <= End <= 20 (upper boundary),2*4*6*8*11*14*17*20*,5,20,11,valid,212900211
+End,P3,1 <= End <= 20 (upper boundary),2*4*6*8*11*14*17*20*,5,21,12,invalid,212900211
+,,,,,,,,
+string/start,P4,start <= string length,*3*5*7*10*,10,10,13,valid,212900211
+string/start,P4,start <= string length,*3*5*7*10*,11,11,14,invalid,212900211
+,,,,,,,,
+string/end,P4,end <= string length,*3*5*7*10*,9,10,15,valid,212900211
+string/end,P4,end <= string length,*3*5*7*10*,9,11,16,invalid,212900211
+,,,,,,,,
+start/end,P4,start <= end,*3*5*7*10*13*16*,4,4,17,valid,212900211
+start/end,P4,start <= end,*3*5*7*10*13*16*,7,6,18,invalid,212900211

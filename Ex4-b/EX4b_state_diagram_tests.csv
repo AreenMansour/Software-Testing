@@ -1,0 +1,54 @@
+command,index,string,Comments,Command number
+#Test 0a,,,,
+state,,,"""state"" command when in StandBy",1
+,,,,
+#Test 0a,,,,
+stop,,,"""stop"" command when in StandBy",2
+,,,,
+#Test1,,,StandBy to Input-0 and back to StandBy,
+add,,,StandBy --> Input-0,3
+state,,,"""state"" command when in Input-0",4
+stop,,,Input-0 --> StandBy,5
+,,,,
+#Test2,,,StandBy to input-1 and back to StandBy,
+add,,,--> Input-0,6
+add,,string1,--> Input-1,7
+state,,,"""state"" command when in Input-1",8
+stop,,,Input-1 --> StandBy,9
+,,,,
+,,,,
+#Test3,,,StandBy to input-2 and back to StandBy,
+add,,,,10
+add,,string1,,11
+add,,string2,Input-2 state,12
+state,,,"""state"" command when in Input-2",13
+stop,,,Input-2 --> StandBy,14
+,,,,
+,,,,
+#Test4,,,"StandBy to Query, 
+Error on ""add string"" and back to Query
+Error on ""add string"" and back to StandBy",
+add,,,,15
+add,,string1,,16
+add,,string2,,17
+add,,string3,Input 2 --> Query,18
+state,,,"""state"" command when in Query",19
+query,4,,"Move to ""Error""",20
+state,,,"""state"" command when in Error",21
+sorry,,,Back to Query,22
+add ,,string4,"Move to ""Error""",23
+stop,,,Error --> StandBy,24
+,,,,
+,,,,
+#Test5,,,"StandBy to query, 
+Queries for 1,2,3
+Query for invalid index and back to Query
+Back to StandBy",
+add,,,,25
+add,,string1,,26
+add,,string2,,27
+add,,string3,,28
+query,1,,,29
+query,2,,,30
+query,3,,,31
+stop,,,Query --> StandBy,32
